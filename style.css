@@ -6,7 +6,6 @@ div#main{
   display:flex;
 }
 div#left{
-  display: block;
   min-height:100vh;
   width:28vw;    
   background-color: #003985;
@@ -39,17 +38,14 @@ a{
 }
 div#right{
   display:block;
-  width:72vw;
+  width:100vw;
   min-height:100vh;
   background-color: #e0e5ff;
-  color:#003985;
+  color:#003985; 
 }
 div#rightC{/* conteúdo à direita */  
-  padding-top: 4vh;
-  padding-left: 4vw;
-  padding-right: 4vw;  
-  padding-bottom: 4vh;  
-
+  padding: 4vh 4vw 4vh 4vw;
+  justify-content:center;
   display:flex;
 }
 div#rightC h3{
@@ -86,7 +82,7 @@ div#contDir{
   margin-left:2vw;
 }
 div#contEsq, div#contDir{
-  width: 33vw;
+  width: 40vw;
   display:block;
 }
 div#leftDown{
@@ -106,16 +102,52 @@ div#leftDown{
 .links i{
   padding-right:7px;
 }
-#botaoMenu{
+div#botaoMenu{
   display:block;
-  color:white;
   background-color: #012c65;
 }
-#botaoMenu i{
+div#botaoMenu i{
   padding:10px 10px 10px 10px;
   font-size:22px;
   transition:0.2s;
 }
-#botaoMenu i:hover{
-  color: light blue
+div#botaoMenu i:hover{
+  color: #bcacfb;
+  cursor: pointer;
+}
+button#btnBarra{
+  background-color:inherit;
+  border:none;
+  color:white;
+}
+
+@media screen and (max-width: 700px){
+  div#rightC{/* conteúdo à direita */   
+    display:inline-block;
+    justify-content:center;
+    padding-right:-4vw;
+  }
+  div#contEsq, div#contDir{
+    margin:0;
+    width: 72vw;
+    display:block;
+  }
+  div#right{
+    display:flex;
+    justify-content:center;
+  }
+  div#leftC h2{
+    font-size:18px;
+    text-align: center;
+  }
+  div#leftC h3{
+    font-size:12px;
+    margin-bottom:-5px;
+  }
+  div#leftC p{
+    font-size:12px;
+  }
+  .links{
+    font-size:12px;
+  }
 }
