@@ -35,6 +35,7 @@ div#leftC p{
 }
 a{
   color:inherit;
+  text-decoration:none;
 }
 div#right{
   display:block;
@@ -87,4 +88,34 @@ div#contDir{
 div#contEsq, div#contDir{
   width: 33vw;
   display:block;
+}
+div#leftDown{
+  padding-top:7vh;
+  
+}
+.links{
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:4vw;
+  margin-left:-4vw;
+  transition: 0.2s;
+}
+.links:hover{
+  background-image: linear-gradient(to right,#012c65,#003985)
+}
+.links i{
+  padding-right:7px;
+}
+#botaoMenu{
+  display:block;
+  color:white;
+  background-color: #012c65;
+}
+#botaoMenu i{
+  padding:10px 10px 10px 10px;
+  font-size:22px;
+  transition:0.2s;
+}
+#botaoMenu i:hover{
+  color: light blue
 }
