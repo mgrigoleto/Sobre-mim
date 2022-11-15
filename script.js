@@ -1,27 +1,30 @@
-var status = document.getElementById("left").style.display
+var on = 1
+
+var menu = document.getElementById("left").style
+var cont = document.getElementById("right").style
+var btn = document.getElementById("botaoMenu").style
 
 function toggle(){
-  if(status == 'none'){
-    document.getElementById("left").style.display = 'block'
-    status = 'block'
-    
-    document.getElementById("right").style.width = '70vw'
-    document.getElementById("contEsq").style.width = '45vw'
-    document.getElementById("contDir").style.width = '45vw'
-    
-  }else if(status == 'block'){
-    document.getElementById("left").style.display = 'none'
-    status = 'none'
+  menu.position = 'absolute'
+  if(on == 1){//abrir
+    on = 2        
 
-    document.getElementById("right").style.width = '100vw'
-    console.log(window.screen.availWidth)
-    console.log(window.innerWidth)
-    if((window.innerWidth)<=700){
-      document.getElementById("contEsq").style.width = '72vw'
-      document.getElementById("contDir").style.width = '72vw'
-    }else{
-      document.getElementById("contEsq").style.width = '40vw'
-      document.getElementById("contDir").style.width = '40vw'
-    }    
-  } 
+    menu.animation = "abrir 0.5s 1"      
+    menu.width = '100vw'
+    menu.marginLeft = '0vw'
+    
+    btn.color = 'white'
+    console.log(btn.color)
+
+  }else if(on == 2){//fechar
+    on = 1
+    
+    menu.animation = "fechar 0.5s 1"        
+    
+    setTimeout(function(){
+      menu.marginLeft = '-28vw'
+      btn.color = '#012c65'
+      menu.width = '28vw'
+    }, 490)
+  }
 }

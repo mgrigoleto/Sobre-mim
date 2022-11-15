@@ -1,6 +1,7 @@
 body{
   margin:0;
   font-family: Poppins;
+  background-color: #e0e5ff;
 }
 div#main{
   display:flex;
@@ -10,9 +11,24 @@ div#left{
   width:28vw;    
   background-color: #003985;
   color:white;
+  display:block;
 }
-.pgAM{
-  margin-top:50px;
+
+@keyframes abrir{
+  from{
+    margin-left:-128vw;    
+  }
+  to{
+    margin-right:0vw;
+  }
+}
+@keyframes fechar{
+  from{
+    margin-right:0vw;    
+  }
+  to{
+    margin-left:-128vw;
+  }
 }
 div#leftC{/* conteúdo à esquerda */  
   padding-top:4vh;
@@ -24,13 +40,7 @@ div#leftC{/* conteúdo à esquerda */
 div#leftC h2{
   font-size:28px;
   text-align: center;
-}
-div#leftC h3{
-  font-size:18px;
-  margin-bottom:-5px;
-}
-div#leftC p{
-  font-size:15px;
+  padding-bottom:25px;
 }
 a{
   color:inherit;
@@ -38,10 +48,10 @@ a{
 }
 div#right{
   display:block;
-  width:100vw;
+  width:72vw;
   min-height:100vh;
   background-color: #e0e5ff;
-  color:#003985; 
+  color:#003985;
 }
 div#rightC{/* conteúdo à direita */  
   padding: 4vh 4vw 4vh 4vw;
@@ -103,25 +113,27 @@ div#leftDown{
   padding-right:7px;
 }
 div#botaoMenu{
-  display:block;
-  background-color: #012c65;
+  position: absolute;
+  display:none;
+  padding: 5px 5px 5px 5px;
+  color:#012c65;
+  z-index:1;
 }
 div#botaoMenu i{
-  padding:10px 10px 10px 10px;
-  font-size:22px;
+  font-size:26px;
   transition:0.2s;
 }
 div#botaoMenu i:hover{
-  color: #bcacfb;
+  color: #c0b8ff;
   cursor: pointer;
 }
 button#btnBarra{
   background-color:inherit;
   border:none;
-  color:white;
+  color:inherit;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
   div#rightC{/* conteúdo à direita */   
     display:inline-block;
     justify-content:center;
@@ -129,7 +141,7 @@ button#btnBarra{
   }
   div#contEsq, div#contDir{
     margin:0;
-    width: 72vw;
+    width: 60vw;
     display:block;
   }
   div#right{
@@ -137,17 +149,31 @@ button#btnBarra{
     justify-content:center;
   }
   div#leftC h2{
-    font-size:18px;
+    font-size:3vw;
     text-align: center;
   }
-  div#leftC h3{
-    font-size:12px;
-    margin-bottom:-5px;
+  .links{
+    font-size:2vw;
   }
-  div#leftC p{
-    font-size:12px;
+}
+@media screen and (max-width: 550px){
+  div#botaoMenu{
+    display:block;
+  }
+  #left{
+    margin-left:-28vw;
+  }
+  div#contEsq, div#contDir{
+    width: 80vw;
+  }
+  div#right{
+    width:100vw;
+  }
+  div#leftC h2{
+    font-size:25px;
+    text-align: left;
   }
   .links{
-    font-size:12px;
+    font-size:18px;
   }
 }
