@@ -1,3 +1,4 @@
+/* GENERAL */
 body{
   margin:0;
   font-family: Poppins;
@@ -6,6 +7,8 @@ body{
 div#main{
   display:flex;
 }
+
+/* MENU - STRUCTURE */
 div#left{
   min-height:100vh;
   width:28vw;    
@@ -13,7 +16,20 @@ div#left{
   color:white;
   display:block;
 }
+div#leftC{
+  padding: 4vh 4vw 4vh 4vw;
+}
+div#leftC h2{
+  font-size:28px;
+  text-align: center;
+  padding-bottom:25px;
+}
+a{
+  color:inherit;
+  text-decoration:none;
+}
 
+/* MENU - ANIMATIONS */
 @keyframes abrir{
   from{
     margin-left:-128vw;    
@@ -30,30 +46,52 @@ div#left{
     margin-left:-128vw;
   }
 }
-div#leftC{/* conteúdo à esquerda */  
-  padding-top:4vh;
-  padding-left: 4vw;
-  padding-right: 4vw;  
-  padding-bottom: 4vh;
 
+/* MENU - OPTIONS */
+.links{
+  padding-top:13px;
+  padding-bottom:13px;
+  padding-left:4vw;
+  margin-left:-4vw;
+  transition: 0.2s;
 }
-div#leftC h2{
-  font-size:28px;
-  text-align: center;
-  padding-bottom:25px;
+.links:hover{
+  background-image: linear-gradient(to right,#012c65,#003985)
 }
-a{
+.links i{
+  padding-right:7px;
+}
+
+/* MENU - ICON */
+div#botaoMenu{
+  position: absolute;
+  display:none;
+  padding: 5px 5px 5px 5px;
+  color:#012c65;
+  z-index:1;
+}
+div#botaoMenu i{
+  font-size:26px;
+  transition:0.2s;
+}
+div#botaoMenu i:hover{
+  cursor: pointer;
+}
+button#btnBarra{
+  background-color:inherit;
+  border:none;
   color:inherit;
-  text-decoration:none;
 }
-div#right{
+
+/* CONTENT */
+div#right{/* espaço do conteúdo */
   display:block;
   width:72vw;
   min-height:100vh;
   background-color: #e0e5ff;
   color:#003985;
 }
-div#rightC{/* conteúdo à direita */  
+div#rightC{/* conteúdo */  
   padding: 4vh 4vw 4vh 4vw;
   justify-content:center;
   display:flex;
@@ -75,6 +113,8 @@ div#rightC h2{
   margin-top:0;
   margin-bottom:-7px;
 }
+
+/* CAIXAS BRANCAS */
 .cont{
   border: 2px solid #5e7aa6;
   border-radius:15px;
@@ -95,46 +135,10 @@ div#contEsq, div#contDir{
   width: 40vw;
   display:block;
 }
-div#leftDown{
-  padding-top:7vh;
-  
-}
-.links{
-  padding-top:10px;
-  padding-bottom:10px;
-  padding-left:4vw;
-  margin-left:-4vw;
-  transition: 0.2s;
-}
-.links:hover{
-  background-image: linear-gradient(to right,#012c65,#003985)
-}
-.links i{
-  padding-right:7px;
-}
-div#botaoMenu{
-  position: absolute;
-  display:none;
-  padding: 5px 5px 5px 5px;
-  color:#012c65;
-  z-index:1;
-}
-div#botaoMenu i{
-  font-size:26px;
-  transition:0.2s;
-}
-div#botaoMenu i:hover{
-  color: #c0b8ff;
-  cursor: pointer;
-}
-button#btnBarra{
-  background-color:inherit;
-  border:none;
-  color:inherit;
-}
 
-@media screen and (max-width: 800px){
-  div#rightC{/* conteúdo à direita */   
+/* RESIZE */
+@media screen and (max-width: 800px){/* altera de 2 colunas para 1 coluna de caixa */
+  div#rightC{ 
     display:inline-block;
     justify-content:center;
     padding-right:-4vw;
@@ -156,7 +160,7 @@ button#btnBarra{
     font-size:2vw;
   }
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 550px){/* esconder o menu e mostrar o botão para mostrá-lo */
   div#botaoMenu{
     display:block;
   }
@@ -172,8 +176,16 @@ button#btnBarra{
   div#leftC h2{
     font-size:25px;
     text-align: left;
+    padding-left:4vw;
   }
   .links{
     font-size:18px;
+    padding-left:8vw;
+  }
+}
+@media screen and (min-width: 551px){/* aparecer o menu quando o resize aumenta */
+  #left{
+    width:28vw;
+    margin-left:0vw;
   }
 }

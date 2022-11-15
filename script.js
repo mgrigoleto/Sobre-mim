@@ -22,9 +22,9 @@ function toggle(){
     menu.animation = "fechar 0.5s 1"        
     
     setTimeout(function(){
-      menu.marginLeft = '-28vw'
+      menu.marginLeft = '-128vw'
       btn.color = '#012c65'
-      menu.width = '28vw'
+      menu.width = '100vw'
     }, 490)
   }
 }
