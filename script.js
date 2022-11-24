@@ -1,7 +1,6 @@
 var on = 1
 
 var menu = document.getElementById("left").style
-var cont = document.getElementById("right").style
 var btn = document.getElementById("botaoMenu").style
 
 function toggle(){
@@ -14,17 +13,18 @@ function toggle(){
     menu.marginLeft = '0vw'
     
     btn.color = 'white'
-    console.log(btn.color)
+    window.scrollTo(0,0);
+    document.body.style.overflow = 'hidden'
 
   }else if(on == 2){//fechar
     on = 1
+    document.body.style.overflow = ''
     
-    menu.animation = "fechar 0.5s 1"        
+    menu.animation = "fechar 0.5s 1"
+    btn.color = '#012c65'
     
     setTimeout(function(){
       menu.marginLeft = '-128vw'
-      btn.color = '#012c65'
-      menu.width = '100vw'
     }, 490)
   }
 }
