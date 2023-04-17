@@ -2,6 +2,7 @@ var on = 1
 
 var menu = document.getElementById("left").style
 var btn = document.getElementById("botaoMenu").style
+var pfp = document.getElementById("pfp").style
 
 function toggle(){
   menu.position = 'absolute'
@@ -11,6 +12,9 @@ function toggle(){
     menu.animation = "abrir 0.5s 1"      
     menu.width = '100vw'
     menu.marginLeft = '0vw'
+
+    pfp.width = '70vw'
+    pfp.height = '70vw'
     
     btn.color = 'white'
     window.scrollTo(0,0);
