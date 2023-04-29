@@ -10,7 +10,8 @@ div#main{
 
 /* MENU - STRUCTURE */
 div#left{
-  min-height:100vh;
+  min-height: 100%;
+  overflow: hidden;
   width:28vw;    
   background-color: #003985;
   color:white;

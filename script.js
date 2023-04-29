@@ -1,8 +1,9 @@
-var on = 1
+let on = 1
 
-var menu = document.getElementById("left").style
-var btn = document.getElementById("botaoMenu").style
-var pfp = document.getElementById("pfp").style
+const menu = document.getElementById("left").style
+const btndiv = document.getElementById("botaoMenu").style
+const pfp = document.getElementById("pfp").style
+const content = document.getElementById("right").style
 
 function toggle(){
   menu.position = 'absolute'
@@ -16,19 +17,24 @@ function toggle(){
     pfp.width = '70vw'
     pfp.height = '70vw'
     
-    btn.color = 'white'
+    btndiv.color = 'white'
+
     window.scrollTo(0,0);
-    document.body.style.overflow = 'hidden'
+
+    setTimeout(function(){
+      content.display = 'none'
+    }, 450)
 
   }else if(on == 2){//fechar
     on = 1
     document.body.style.overflow = ''
+    content.display = 'flex'
     
     menu.animation = "fechar 0.5s 1"
-    btn.color = '#012c65'
+    btndiv.color = '#012c65'
     
     setTimeout(function(){
       menu.marginLeft = '-128vw'
-    }, 490)
+    }, 450)
   }
 }
