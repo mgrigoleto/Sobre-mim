@@ -17,7 +17,7 @@ function toggle(){
     pfp.width = '70vw'
     pfp.height = '70vw'
     
-    btndiv.color = 'white'
+    btndiv.color = 'lightblue'
 
     window.scrollTo(0,0);
 
@@ -31,7 +31,7 @@ function toggle(){
     content.display = 'flex'
     
     menu.animation = "fechar 0.5s 1"
-    btndiv.color = '#012c65'
+    btndiv.color = 'white'
     
     setTimeout(function(){
       menu.marginLeft = '-128vw'

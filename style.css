@@ -81,8 +81,10 @@ div#botaoMenu{
   position: absolute;
   display:none;
   padding: 5px 5px 5px 5px;
-  color:#012c65;
+  color:white;
   z-index:1;
+  width:calc(100% - 10px);
+  background-color:#003985;
 }
 div#botaoMenu i{
   font-size:26px;
@@ -106,7 +108,7 @@ div#right{/* espaço do conteúdo */
   color:#003985;
 }
 div#rightC{/* conteúdo */  
-  padding: 4vh 4vw 4vh 4vw;
+  padding: 8vh 4vw 4vh 4vw;
   justify-content:center;
   display:flex;
 }
