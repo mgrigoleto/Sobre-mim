@@ -13,7 +13,7 @@ div#left{
   min-height: 100%;
   overflow: hidden;
   width:28vw;    
-  background-color: #003985;
+  background-color: #00214d;
   color:white;
   display:block;
 }
@@ -56,7 +56,7 @@ a{
   transition: 0.2s;
 }
 .links:hover{
-  background-image: linear-gradient(to right,#012c65,#003985)
+  background-image: linear-gradient(to right,#00214d,#003985)
 }
 .links i{
   padding-right:7px;
@@ -104,7 +104,7 @@ div#right{/* espaço do conteúdo */
   display:block;
   width:72vw;
   min-height:100vh;
-  background-color: #e0e5ff;
+  background: radial-gradient(circle, rgba(31,127,255,1) 0%, rgba(33,58,255,1) 50%, rgba(0,54,235,1) 100%);
   color:#003985;
 }
 div#rightC{/* conteúdo */  
@@ -132,20 +132,20 @@ div#rightC h2{
 
 /* CAIXAS BRANCAS */
 .cont{
-  border: 2px solid #5e7aa6;
-  border-radius:15px;
+  border: 2px solid #00214d;
+  border-radius:10px;
   padding:15px 15px 15px 15px;
   transition: 0.2s;
-  box-shadow: 3px 3px #5e7aa6;
-  background-color:white;
+  box-shadow: 3px 3px #00214d;
+  background:white;
   display:block;
-  margin-bottom:4vw;
+  margin-bottom:30px;
 }
 div#contEsq{
-  margin-right:2vw;
+  margin-right:15px;
 }
 div#contDir{
-  margin-left:2vw;
+  margin-left:15px;
 }
 div#contEsq, div#contDir{
   width: 40vw;
