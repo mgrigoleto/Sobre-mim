@@ -84,7 +84,7 @@ div#botaoMenu{
   color:white;
   z-index:1;
   width:calc(100% - 10px);
-  background-color:#003985;
+  background-color:#00214d;
 }
 div#botaoMenu i{
   font-size:26px;
