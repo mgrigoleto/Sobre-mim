@@ -54,6 +54,7 @@ a{
   padding-left:4vw;
   margin-left:-4vw;
   transition: 0.2s;
+  word-break: break-all;
 }
 .links:hover{
   background-image: linear-gradient(to right,#00214d,#003985)
@@ -153,7 +154,7 @@ div#contEsq, div#contDir{
 }
 
 /* RESIZE */
-@media screen and (max-width: 800px){/* altera de 2 colunas para 1 coluna de caixa */
+@media screen and (max-width: 900px){/* altera de 2 colunas para 1 coluna de caixa */
   div#rightC{ 
     display:inline-block;
     justify-content:center;
