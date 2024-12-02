@@ -120,12 +120,13 @@ div#rightC h3{
 }
 div#rightC h4{
   margin-bottom:-19px;
-  color:black;
+  color:#8585ff;
   font-size:14px;
 }
 div#rightC p{
   font-size:17px;
   padding-top:10px;
+  color:white;
 }
 div#rightC h2{
   margin-top:0;
