@@ -180,7 +180,6 @@ div#contEsq, div#contDir{
 @media screen and (max-width: 550px){/* esconder o menu e mostrar o botão para mostrá-lo */
   div#botaoMenu{
     display:block;
-    position:fixed;
   }
   #left{
     margin-left:-28vw;
