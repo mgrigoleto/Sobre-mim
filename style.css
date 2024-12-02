@@ -155,6 +155,9 @@ div#contEsq, div#contDir{
 
 /* RESIZE */
 @media screen and (max-width: 900px){/* altera de 2 colunas para 1 coluna de caixa */
+  div#botaoMenu{
+    display:absolute;
+  }
   div#rightC{ 
     display:inline-block;
     justify-content:center;
@@ -179,6 +182,7 @@ div#contEsq, div#contDir{
 @media screen and (max-width: 550px){/* esconder o menu e mostrar o botão para mostrá-lo */
   div#botaoMenu{
     display:block;
+    position: fixed;
   }
   #left{
     margin-left:-28vw;
