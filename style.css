@@ -2,7 +2,7 @@
 body{
   margin:0;
   font-family: Poppins;
-  background-color: #e0e5ff;
+  background-color: #00214d;
 }
 div#main{
   display:flex;
@@ -13,7 +13,7 @@ div#left{
   min-height: 100%;
   overflow: hidden;
   width:28vw;    
-  background-color: #00214d;
+  background-color: black;
   color:white;
   display:block;
 }
@@ -85,7 +85,7 @@ div#botaoMenu{
   color:white;
   z-index:1;
   width:calc(100% - 10px);
-  background-color:#00214d;
+  background-color: black;
 }
 div#botaoMenu i{
   font-size:26px;
@@ -133,11 +133,11 @@ div#rightC h2{
 
 /* CAIXAS BRANCAS */
 .cont{
-  border: 2px solid #00214d;
+  border: 2px solid black;
   border-radius:10px;
   padding:15px 15px 15px 15px;
   transition: 0.2s;
-  box-shadow: 3px 3px #00214d;
+  box-shadow: 3px 3px black;
   background:white;
   display:block;
   margin-bottom:30px;
