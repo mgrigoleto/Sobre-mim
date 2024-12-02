@@ -107,7 +107,7 @@ div#right{/* espaço do conteúdo */
   min-height:100vh;
   background: rgb(0,10,122);
   background: radial-gradient(circle, rgba(0,10,122,1) 0%, rgba(4,4,99,1) 50%, rgba(6,0,50,1) 100%);
-  color:#003985;
+  color:#8585ff;
 }
 div#rightC{/* conteúdo */  
   padding: 8vh 4vw 4vh 4vw;
@@ -134,11 +134,9 @@ div#rightC h2{
 
 /* CAIXAS BRANCAS */
 .cont{
-  border: 3px solid black;
   border-radius:10px;
-  padding:15px 15px 15px 15px;
+  padding:15px;
   transition: 0.2s;
-  box-shadow: 5px 5px 10px black;
   background:white;
   display:block;
   margin-bottom:30px;
