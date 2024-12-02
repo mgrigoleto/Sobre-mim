@@ -79,8 +79,9 @@ div#nome{
 
 /* MENU - ICON */
 div#botaoMenu{
-  position: sticky;
+  position: absolute;
   display:none;
+  top:0;
   padding: 5px 5px 5px 5px;
   color:white;
   z-index:1;
@@ -179,6 +180,7 @@ div#contEsq, div#contDir{
 @media screen and (max-width: 550px){/* esconder o menu e mostrar o botão para mostrá-lo */
   div#botaoMenu{
     display:block;
+    position:fixed;
   }
   #left{
     margin-left:-28vw;
