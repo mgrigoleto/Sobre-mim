@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -9,226 +8,199 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link rel="icon" href="">
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/8267ea7449.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div id="main">
-
-    <div id="botaoMenu">
-          <button id="btnBarra" onclick="toggle()"><i class="fa-solid fa-bars"></i></button>
+    <div class="top-menu">
+        <a href="https://www.linkedin.com/in/maur%C3%ADcio-grigoleto-794366228/" target="_blank">
+            <div class="links"><i class="fa-brands fa-linkedin"></i> Linkedin</div>
+        </a>
+    
+        <a href="https://github.com/mgrigoleto" target="_blank">
+            <div class="links"><i class="fa-brands fa-github"></i> GitHub</div>
+        </a>
+    
+        <a href="https://t.me/mgrigoleto" target="_blank">
+            <div class="links"><i class="fa-brands fa-telegram"></i> Telegram</div>
+        </a>
+    
+        <a href="mailto:grigoleto.2002@gmail.com" target="_blank">
+            <div class="links"><i class="fa-solid fa-envelope"></i> E-mail</div>
+        </a>
+    
+        <a href="https://wa.me/5527992331970" target="_blank">
+            <div class="links"><i class="fa-brands fa-whatsapp"></i> Whatsapp</div>
+        </a>
     </div>
+
+    <div class="blue-box">
+        <div id="img-div">
+            <div>
+                <img id="pfp" src="pfp.jpg" alt="Foto de perfil">
+                <h1>Maurício Grigoleto Belinassi</h1>
+                <p>grigoleto.2002@gmail.com</p>
+            </div>
+        </div>
+        <div id="about-me-div">
+            <h2 class="hello-world"><b>GET / 200 OK</b> <br>{ <br><span id="message">"messsage": "Bom te ver aqui!"</span><br>}</h2>
+            <p class="p-apresentacao">
+                Prazer, meu nome é Maurício e sou Desenvolvedor Full-Stack. <br>Um pouco sobre mim:
+            </p>
+            <ul class="lista-habilidades">
+                <li><i class="fa-solid fa-bolt"></i> 4 anos de experiência profissional em TI;</li>
+                <li><i class="fa-solid fa-bolt"></i> 2 anos de experiência como Desenvolvedor Full-Stack;</li>
+                <li><i class="fa-solid fa-bolt"></i> Criação de APIs em múltiplas linguagens;</li>
+                <li><i class="fa-solid fa-bolt"></i> Desenvolvimento de Sistemas Web;</li>
+                <li><i class="fa-solid fa-bolt"></i> Análise de requisitos e modelagem de dados;</li>
+                <li><i class="fa-solid fa-bolt"></i> Automações com Python;</li>
+                <li><i class="fa-solid fa-bolt"></i> Técnico em Informática para Internet;</li>
+                <li><i class="fa-solid fa-bolt"></i> Graduando em Sistemas de Informação;</li>
+                <li><i class="fa-solid fa-bolt"></i> Fluente em Inglês;</li>
+            </ul>
+            <p class="p-apresentacao">e muito mais...</p>
+        </div>
+    </div>
+
+    <div class="black-box-border"></div>
+
+    <div class="black-box">
+        <h1><i class="fa-solid fa-briefcase"></i> Experiência</h1></h1>
+        <div class="cards-container">
+            <div class="card">
+                <h3>AUXILIAR DE TECNOLOGIA</h3>
+                <div class="card-content">
+                    <h4>THE WELLINGTON EXTINTORES</h4>
+                    <h4>JUNHO DE 2021 - FEVEREIRO DE 2022</h4>
+                    <p>Orientações sobre uso de sistemas web, gerenciamento de mídias sociais, manutenções e reparos em computadores. Design de propagandas, rótulos, logomarca e afins.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>OPERADOR DE SUPORTE TÉCNICO</h3>
+                <div class="card-content">
+                    <h4>LOGA INTERNET</h4>
+                    <h4>JUNHO DE 2022 - ABRIL DE 2023</h4>
+                    <p>Suporte técnico em redes. Identificando e solucionando problemas de conexão com a Internet.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>ESTAGIÁRIO DE TI</h3>
+                <div class="card-content">
+                    <h4>MACROEX COMERCIAL IMPORTADORA E EXPORTADORA</h4>
+                    <h4>JULHO DE 2023 - JANEIRO DE 2024</h4>
+                    <p>Prototipagem, desenvolvimento e hospedagem de Aplicações Web. Gerenciamento de banco de dados. Desenvolvimento de APIs. Configurações de sistemas internos.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>ASSISTENTE DE ANÁLISE DE SISTEMAS</h3>
+                <div class="card-content">
+                    <h4>MACROEX COMERCIAL IMPORTADORA E EXPORTADORA</h4>
+                    <h4>JANEIRO DE 2024 - SETEMBRO DE 2024</h4>
+                    <p>Prototipagem, desenvolvimento e hospedagem de Aplicações Web. Gerenciamento de banco de dados. Desenvolvimento de APIs. Configurações de sistemas internos.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>ANALISTA DE DESENVOLVIMENTO DE SISTEMAS</h3>
+                <div class="card-content">
+                    <h4>MACROEX COMERCIAL IMPORTADORA E EXPORTADORA</h4>
+                    <h4>SETEMBRO DE 2024 - ABRIL DE 2025</h4>
+                    <p>Prototipagem, desenvolvimento e hospedagem de Aplicações Web. Gerenciamento de banco de dados. Desenvolvimento de APIs. Configurações de sistemas internos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
-    <div id="left">      
-      
-      <div id="leftC">     
+    <div class="solid-blue-box-border"></div>
 
-        <div id="nome">
-          <h2>Maurício Grigoleto Belinassi</h2>
-          <img id="pfp" src="pfp.jpg">
+    <div class="solid-blue-box">
+        <h1><i class="fa-solid fa-microchip"></i> Tecnologias</h1>
+        <div class="cards-container">
+            <span class="pl-tech tech-card">HTML5</span>
+            <span class="pl-tech tech-card">CCS3</span>
+            <span class="pl-tech tech-card">JAVASCRIPT</span>
+            <span class="pl-tech tech-card">TYPESCRIPT</span>
+            <span class="pl-tech tech-card">NEXT</span>
+            <span class="pl-tech tech-card">REACT</span>
+            <span class="pl-tech tech-card">REACT NATIVE</span>
+            <span class="pl-tech tech-card">NODE.JS</span>
+            <span class="pl-tech tech-card">EXPRESS.JS</span>
+            <span class="pl-tech tech-card">PRISMA</span>
+            <span class="pl-tech tech-card">SQUELIZE</span>
+            <span class="pl-tech tech-card">C#</span>
+            <span class="pl-tech tech-card">.NET</span>
+            <span class="pl-tech tech-card">ENTITY FRAMEWORK</span>
+            <span class="pl-tech tech-card">PYTHON</span>
+            <span class="pl-tech tech-card">FLASK</span>
+            <span class="db-tech tech-card">MONGODB</span>
+            <span class="db-tech tech-card">SQLITE</span>
+            <span class="db-tech tech-card">MYSQL</span>
+            <span class="db-tech tech-card">POSTGRES</span>
+            <span class="db-tech tech-card">SQLSERVER</span>
+            <span class="db-tech tech-card">ORACLE</span>
+            <span class="tool-tech tech-card">GLPI</span>
+            <span class="tool-tech tech-card">FIGMA</span>
+            <span class="tool-tech tech-card">GIMP</span>
+            <span class="tool-tech tech-card">AZURE</span>
         </div>
+    </div>
 
-        <div id="contatos">
-        
-          <a href="https://www.linkedin.com/in/maur%C3%ADcio-grigoleto-794366228/" target="_blank">
-            <div class="links"><i class="fa-brands fa-linkedin"></i>Maurício Grigoleto
-          </div>
-          </a>
-  
-          <a href="https://github.com/mgrigoleto" target="_blank">
-            <div class="links"><i class="fa-brands fa-github"></i>mgrigoleto
-          </div>
-          </a>
-  
-          <a href="https://t.me/mgrigoleto" target="_blank">
-            <div class="links"><i class="fa-brands fa-telegram"></i>(27) 99233-1970
-          </div>
-          </a>
-  
-          <a href="mailto:grigoleto.2002@gmail.com" target="_blank">
-            <div class="links"><i class="fa-solid fa-envelope"></i>grigoleto.2002@gmail.com
-          </div>
-          </a>
-  
-          <a href="tel:5527992331970" target="_blank">
-            <div class="links"><i class="fa-solid fa-phone"></i>(27) 99233-1970
-          </div>
-          </a>
+    <div class="black-box-border"></div>
 
-        </div>      
-        
-      </div>      
-    </div><!-- left -->
-    
-    <div id="right">      
-      
-      <div id="rightC"> 
-
-        <div id="contEsq">
-          
-        <div class="cont">
-          
-        <h2>Formação</h2>
-          
-        <div class="pgCT">
-          <h3>Técnico em Informática para Internet</h3>
-          <h4>INSTITUTO FEDERAL DO ESPÍRITO SANTO</h4>
-          <h4>FEVEREIRO DE 2018 - DEZEMBRO DE 2021</h4>
-          <h4>COLATINA - ES</h4>
-          <p>Curso técnico integrado ao ensino médio.</p>
+    <div class="black-box">
+        <h1><i class="fa-solid fa-graduation-cap"></i> Cursos</h1>
+        <div class="cards-container">
+            <div class="card">
+                <h3>IT ESSENTIALS</h3>
+                <div class="card-content">
+                    <h4>CISCO NETWORKING ACADEMY</h4>
+                    <h4>JANEIRO DE 2022 - DEZEMBRO DE 2022</h4>
+                    <p>Curso para aprofundamento do conhecimento na área de TI.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>JAVASCRIPT ESSENTIALS</h3>
+                <div class="card-content">
+                    <h4>CISCO NETWORKING ACADEMY</h4>
+                    <h4>JANEIRO DE 2023 - MARÇO DE 2023</h4>
+                    <p>Curso de aprendizagem sobre os conceitos fundamentais da programação com foco em JavaScript.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>BIG DATA EM APOIO À TOMADA DE DECISÃO</h3>
+                <div class="card-content">
+                    <h4>ENAP</h4>
+                    <h4>MARÇO DE 2023 - MAIO DE 2023</h4>
+                    <p>Curso de aprendizagem a respeito de Big Data e sua aplicação em ambientes públicos e privados.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>LEARNING WITH PYTHON</h3>
+                <div class="card-content">
+                    <h4>ENAP</h4>
+                    <h4>ABRIL DE 2023 - MAIO DE 2023</h4>
+                    <p>Curso de aprendizagem em Python, dando um overview da semântica e sintaxe da linguagem, indo desde o básico até as aplicações em soluções contemporâneas.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>DESIGN CENTRADO NO USUÁRIO</h3>
+                <div class="card-content">
+                    <h4>PUCRS</h4>
+                    <h4>JUNHO DE 2023 - JULHO DE 2023</h4>
+                    <p>Curso de aprendizagem sobre os conceitos e aplicações do User Experience (UX), com a didática feita pelo criador do termo 'UX', Don Norman.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3>C# E PROGRAMAÇÃO ORIENTADA A OBJETOS</h3>
+                <div class="card-content">
+                    <h4>UDEMY</h4>
+                    <h4>MAIO DE 2023 - NOVEMBRO DE 2023</h4>
+                    <p>Curso para aperfeiçoamento e ampliação de domínio em orientação a objetos, backend e desenvolvimento de APIs em C#.</p>
+                </div>
+            </div>
         </div>
-
-        <div class="pgCT">
-          <h3>Bacharelado em Ciência da Computação</h3>
-          <h4>UNIVERSIDADE DE VILA VELHA</h4>
-          <h4>JANEIRO DE 2022 - DEZEMBRO DE 2023</h4>
-          <h4>VILA VELHA - ES</h4>
-          <p>Graduação.</p>
-        </div>
-
-        <div class="pgCT">
-          <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
-          <h4>MULTIVIX</h4>
-          <h4>FEVEREIRO DE 2024 - JULHO DE 2024</h4>
-          <h4>VILA VELHA - ES</h4>
-          <p>Graduação.</p>
-        </div>
-
-        <div class="pgCT">
-          <h3>Bacharelado em Sistemas de Informação</h3>
-          <h4>MULTIVIX</h4>
-          <h4>JULHO DE 2024 - ATUALMENTE</h4>
-          <h4>VILA VELHA - ES</h4>
-          <p>Graduação.</p>
-        </div>
-          
-        </div>  
-
-        <div class="cont">
-          
-        <h2>Cursos</h2>
-          
-          <div class="pgCT">
-            <h3>IT Essentials (EN)</h3>
-            <h4>CISCO NETWORKING ACADEMY</h4>
-            <h4>JANEIRO DE 2022 - DEZEMBRO DE 2022</h4>
-            <h4>REMOTO</h4>
-            <p>Curso para aprofundamento do conhecimento na área de TI.</p>
-          </div>
-  
-          <div class="pgCT">
-            <h3>JavaScript Essentials (EN)</h3>
-            <h4>CISCO NETWORKING ACADEMY</h4>
-            <h4>MARÇO DE 2023 - JULHO DE 2023</h4>
-            <h4>REMOTO</h4>
-            <p>Curso de aprendizagem sobre os conceitos fundamentais da programação com foco em JavaScript.</p>
-          </div>
-
-          <div class="pgCT">
-            <h3>Big Data em Apoio à Tomada de Decisão (PT-BR)</h3>
-            <h4>ENAP</h4>
-            <h4>MARÇO DE 2024 - ABRIL DE 2024</h4>
-            <h4>REMOTO</h4>
-            <p>Curso de aprendizagem a respeito de Big Data e sua aplicação em ambientes públicos e privados.</p>
-          </div>
-
-          <div class="pgCT">
-            <h3>Learning with Python (EN)</h3>
-            <h4>ENAP</h4>
-            <h4>ABRIL DE 2024 - ABRIL DE 2024</h4>
-            <h4>REMOTO</h4>
-            <p>Curso de aprendizagem em Python, dando um overview da semântica e sintaxe da linguagem, indo desde o básico até as aplicações em soluções contemporâneas.</p>
-          </div>
-
-          <div class="pgCT">
-            <h3>Design Centrado no Usuário (EN/PT-BR)</h3>
-            <h4>PUCRS</h4>
-            <h4>JUNHO DE 2024 - JULHO DE 2024</h4>
-            <h4>REMOTO</h4>
-            <p>Curso de aprendizagem sobre os conceitos e aplicações do User Experience (UX), com a didática feita pelo criador do termo 'UX', Don Norman.</p>
-          </div>
-
-          <div class="pgCT">
-            <h3>C# e Programação Orientada a Objetos (PT-BR)</h3>
-            <h4>UDEMY</h4>
-            <h4>MAIO DE 2024 - NOVEMBRO DE 2024</h4>
-            <h4>REMOTO</h4>
-            <p>Curso para aperfeiçoamento e ampliação de domínio em orientação a objetos, backend e desenvolvimento de APIs em C#.</p>
-          </div>
-          
-        </div>
-
-        </div><!-- half left content -->
-        
-        <div id="contDir">
-
-        <div class="cont">
-          
-          <h2>Experiências</h2>
-  
-          <div class="pgCT">
-            <h3>Auxiliar de Tecnologia</h3>
-            <h4>THE WELLINGTON EXTINTORES</h4>
-            <h4>JUNHO DE 2021 - FEVEREIRO DE 2022</h4>
-            <h4>VILA VELHA - ES</h4>
-            <p>Orientações sobre uso de sistemas web, gerenciamento de mídias sociais, manutenções e reparos em computadores. Design de propagandas, rótulos, logomarca e afins.</p>
-          </div>
-  
-          <div class="pgCT">
-            <h3>Operador de Suporte Técnico</h3>
-            <h4>LOGA INTERNET</h4>
-            <h4>JUNHO DE 2022 - ABRIL DE 2023</h4>
-            <h4>VILA VELHA - ES</h4>
-            <p>Suporte técnico em redes. Identificando e solucionando problemas de conexão com a Internet.</p>
-          </div>
-
-          <div class="pgCT">
-            <h3>Estágio em Desenvolvimento de Sistemas</h3>
-            <h4>MACROEX COMERCIAL IMPORTADORA E EXPORTADORA</h4>
-            <h4>JULHO DE 2023 - JANEIRO DE 2024</h4>
-            <h4>VILA VELHA - ES</h4>
-            <p>Prototipagem, desenvolvimento e hospedagem de Aplicações Web. Gerenciamento de banco de dados. Desenvolvimento de APIs. Configurações de sistemas internos.</p>
-          </div>
-
-          <div class="pgCT">
-            <h3>Assistente de Análise de Sistemas</h3>
-            <h4>MACROEX COMERCIAL IMPORTADORA E EXPORTADORA</h4>
-            <h4>JANEIRO DE 2024 - SETEMBRO DE 2024</h4>
-            <h4>VILA VELHA - ES</h4>
-            <p>Prototipagem, desenvolvimento e hospedagem de Aplicações Web. Gerenciamento de banco de dados. Desenvolvimento de APIs. Configurações de sistemas internos.</p>
-          </div>
-
-          <div class="pgCT">
-            <h3>Analista e Desenvolvedor de Sistemas Junior</h3>
-            <h4>MACROEX COMERCIAL IMPORTADORA E EXPORTADORA</h4>
-            <h4>SETEMBRO DE 2024 - ATUALMENTE</h4>
-            <h4>VILA VELHA - ES</h4>
-            <p>Prototipagem, desenvolvimento e hospedagem de Aplicações Web. Gerenciamento de banco de dados. Desenvolvimento de APIs. Configurações de sistemas internos.</p>
-          </div>
-
-        </div>        
-
-        <div class="cont">
-          
-          <h2>Sobre mim</h2>
-          <p>Sempre fui apaixonado por tecnologia. Aprender coisas novas e aprofundar meu conhecimento são valores que busco seguir sempre.</p>
-          <p>Minhas principais características são: Proatividade, eficiência e fácil aprendizagem.</p>
-          <p>Possuo experiência profissional nas tecnologias: <b>.NET, EntityFramework, Docker, NodeJS, ReactJS, Python, OracleSQL, SQLServer, Git, Github, Oracle SQL, Linux, JavaScript, Python, HTML5, CSS3, GLPI, Sharepoint.</b></p>
-
-        </div>
-          
-        </div><!-- half right content -->
-        
-        
-    </div> <!-- right content -->
-    </div><!-- right -->
-    
-  </div><!-- main -->
-  
-
-
-  
-  <script src="script.js"></script>
-  <script src="https://kit.fontawesome.com/8267ea7449.js" crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>
